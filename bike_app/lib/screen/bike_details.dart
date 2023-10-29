@@ -124,18 +124,24 @@ class BikeDetails extends StatelessWidget {
                   
                   
                     const SizedBox(height: 20,),
-                      RichText(
-                    text: const TextSpan(
-                        style: TextStyle(
-                          fontSize: 18.0,
-                          color: Colors.black,
-                        ),
-                        children: <TextSpan>[
-                      TextSpan(
-                          text: 'Add ',
-                          style: TextStyle(fontWeight: FontWeight.bold)),
-                      TextSpan(text: 'items')
-                    ])),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+
+                        children:[ RichText(
+                          
+                                          text: const TextSpan(
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            color: Colors.black,
+                          ),
+                          children: <TextSpan>[
+                        TextSpan(
+                            text: 'Add ',
+                            style: TextStyle(fontWeight: FontWeight.bold)),
+                        TextSpan(text: 'items')
+                                          ])),
+                        ]
+                      ),
                      SizedBox(
               height: 280,
               
