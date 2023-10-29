@@ -1,3 +1,4 @@
+import 'package:bike_app/screen/bike_details.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -157,22 +158,25 @@ class _HomeScreen extends State<HomeScreen> {
                     const SizedBox(
                       width: 8,
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                          border: Border.all(style: BorderStyle.solid),
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Column(children: [
-                        Image.network(
-                          'https://www.royalenfield.com/content/dam/royal-enfield/meteor-new/section8/new/MatteBlk/J1D2_MatteBlk_000.jpg',
-                          height: 120,
-                        ),
-                        const Text(
-                          'Scout Bobber',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        const Text('Indian'),
-                        const Text('1499/per day')
-                      ]),
+                    InkWell(
+                      onTap: () {    Navigator.of(context).push(MaterialPageRoute(builder: (context) => const  BikeDetails()));},
+                      child: Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(style: BorderStyle.solid),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Column(children: [
+                          Image.network(
+                            'https://www.royalenfield.com/content/dam/royal-enfield/meteor-new/section8/new/MatteBlk/J1D2_MatteBlk_000.jpg',
+                            height: 120,
+                          ),
+                          const Text(
+                            'Scout Bobber',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          const Text('Indian'),
+                          const Text('1499/per day')
+                        ]),
+                      ),
                     ),
                     const SizedBox(
                       width: 8,

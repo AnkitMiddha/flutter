@@ -1,5 +1,6 @@
 // import 'package:bike_app/screen/bike_details.dart';
 // import 'package:bike_app/screen/home_screen.dart';
+import 'package:bike_app/screen/bike_details.dart';
 import 'package:bike_app/screen/payment_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         useMaterial3: true,
       ),
-      home: const  PaymentScreen()
+      home: const  BikeDetails()
     );
   }
 }
